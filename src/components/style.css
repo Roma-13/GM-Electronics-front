@@ -1,0 +1,74 @@
+.container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .reg {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  form .form-group > div {
+    flex: 1 1 calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="file"],
+  form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form button[type="button"] {
+    width: auto;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  form button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .properties-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .properties-group > div {
+    flex: 1 1 calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+  }
+  
