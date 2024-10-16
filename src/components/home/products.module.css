@@ -11,8 +11,9 @@
     font-weight: bold;
     color: #333;
     position: fixed; 
-    top: 1px; 
-    left: 263px;
+    top: 57px; 
+    left: 31%; 
+    transform: translateX(-50%); 
     z-index: 1000; 
 }
 .list {
@@ -26,21 +27,21 @@
 .item {
     width: 250px;
     height: 370px; 
-    margin-top: 80px;
+    margin-top: 100px;
     color: black; 
     border-radius: 15px; 
     border: 2px solid transparent;
     transition: transform 0.3s ease, border-color 0.3s ease; 
     overflow: hidden; 
-    margin-bottom: -50px;
+    margin-bottom: -100px;
 }
 .checkIcon {
     color: #4CAF50; 
     margin-right: 5px;
     vertical-align: middle;
 }
-.crossIcon{
-    color:red;
+.crossIcon {
+    color: red;
     margin-right: 5px;
     vertical-align: middle;
 }
@@ -48,11 +49,9 @@
     border-color: gray; 
     transform: translateY(-5px);
 }
-
 .imager {
     position: relative;
 }
-
 .serialnumber {
     font-size: 12px;
     position: absolute;
@@ -75,17 +74,14 @@
     opacity: 1;
     left: 0; 
 }
-
 .name {
     margin-top: 7px;
     font-size: 16px;
     font-family: "Cairo", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     padding: 10px; 
     color: #666666;
-    font-weight: bold;
 }
-
 .price {
     font-size: 18px;
     font-family: "Cairo", sans-serif;
@@ -100,10 +96,10 @@
     color: white; 
     border-radius: 5px;
     padding: 1px 5px;
-    left:8px;
+    left: 8px;
     font-weight: bold;
     position: absolute;
-    top:10px;
+    top: 10px;
     font-size: 12px;
 }
 .actionsContainer {
@@ -111,14 +107,14 @@
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-    top: 20px; 
+    top: 70px; 
     right: 305px; 
     z-index: 1000;
     gap: 20px; 
 }
 .sortSelect {
     font-size: 15px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -126,7 +122,6 @@
     cursor: pointer;
     transition: border-color 0.3s ease;
 }
-
 .sortSelect:hover {
     border-color: #666;
 }
@@ -137,8 +132,8 @@
     border-radius: 10%; 
     padding: 5px;
     position: absolute;
-    left:200px;
-    top:10px;
+    left: 200px;
+    top: 10px;
 }
 .stockStatus {
     font-size: 14px;
@@ -148,26 +143,202 @@
     left: 20px; 
     top: 300px; 
 }
-
 .inStock {
     color: #4CAF50;
 }
-
 .outOfStock {
     color: red; 
 }
-
-
-.item:hover {
-    transform: translateY(-5px); 
-}
-
 .date {
     font-size: 14px;
     color: #666;
     margin-top: 5px;
     position: absolute; 
-    left:20px; 
+    left: 20px; 
     top: 330px; 
 }
+.content {
+    display: flex;
+}
+.sidebar {
+    width: 200px; 
+    padding: 60px;
+}
+.sidebarTitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 15px; 
+    font-family: "Cairo", sans-serif;
+}
+.categoryList {
+    list-style: none;
+    padding: 0;
+}
+.categoryItem {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.categoryItem:hover {
+    color: #666; 
+}
+.mainContent {
+    flex-grow: 1; 
+    padding: 20px; 
+}
+.categoryButtons {
+    display: flex;
+    flex-direction: column;
+}
+.categoryButton {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    width: 150%;
+    font-family: "Cairo", sans-serif;
+}
+.categoryButton:hover {
+    background-color: #666;
+    color: white;
+}
+.active {
+    background-color: #666;
+    color: white;
+}
 
+@media (max-width: 1354px) {
+    .title {
+        font-size: 20px; 
+        left: 29%;
+        transform: translateX(-50%);
+    }
+    .actionsContainer {
+        top: 75px; 
+        right: 220px; 
+    }
+    .sidebar {
+        padding: 20px;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 1256px) {
+    .title {
+        font-size: 20px; 
+        left: 38%;
+        transform: translateX(-50%);
+    }
+    .actionsContainer {
+        top: 75px; 
+        right: 280px; 
+    }
+    .sidebar {
+        padding: 20px;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 1024px) {
+    .title {
+        font-size: 20px; 
+        left: 36%;
+        transform: translateX(-50%);
+    }
+    .actionsContainer {
+        top: 75px; 
+        right: 160px; 
+    }
+    .sidebar {
+        padding: 20px;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 901px) {
+    .title {
+        font-size: 15px; 
+        left: 48%;
+        transform: translateX(-50%);
+    }
+    .actionsContainer {
+        top: 71px; 
+        right: 262px; 
+    }
+    .sidebar {
+        padding: 20px;
+        margin-top: 25px;
+    }
+    .sortSelect {
+        font-size: 12px;
+        padding: 2px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px; 
+        left: 41%;
+        transform: translateX(-50%);
+    }
+    .item {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+    .actionsContainer {
+        top: 75px; 
+        right: 150px; 
+    }
+    .sidebar {
+        width: 100%; 
+        padding: 20px;
+        margin-top: 25px;
+    }
+    .categoryButton {
+        width: 100%; 
+    }
+    .cartIcon {
+        font-size: 20px; 
+        color: white; 
+        padding: 5px;
+        position: absolute;
+        left: 300px;
+        top: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .title {
+        font-size: 12px; 
+        left: 50%;
+        transform: translateX(-50%);
+        top: 8%;
+    }
+    .item {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        width: 100%; 
+        padding: 20px;
+        margin-top: 25px;
+    }
+    .categoryButton {
+        width: 100%; 
+    }
+    .actionsContainer {
+        top: 77px; 
+        right: 70px; 
+    }
+    .sortSelect {
+        font-size: 8px;
+        padding: 2px 10px;
+    }
+    .cartIcon {
+        padding: 5px;
+        position: absolute;
+        left: 150px;
+        top: 10px;
+    }
+}
